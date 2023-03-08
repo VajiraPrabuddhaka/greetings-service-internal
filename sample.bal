@@ -5,7 +5,7 @@ type Greeting record {
     string to;
     string message;
 };
-
+// dummy comment
 service / on new http:Listener(8090) {
     resource function get .(string name) returns Greeting {
         Greeting greetingMessage = {"from" : "Choreo", "to" : name, "message" : "Welcome to Choreo!"};
